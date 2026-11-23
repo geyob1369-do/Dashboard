@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 :root{
@@ -9,7 +10,7 @@
     --white_color: rgb(255, 255, 255);
     --blue_color:#1992D4;
     --ice-blue: #E2E8F0;
-    --font-weight:600;
+    --font-weight:400;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
     grid-template-rows: auto 1fr ;
     min-height: 100vh;
     background-color: var(--ice-blue);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .side_nav{
@@ -36,6 +37,7 @@ body {
     flex-direction: column;
     padding: 24px;
     gap: 20px;
+   font-weight:600;
     
 }
 
@@ -55,11 +57,13 @@ body {
 .input_and_profile{
     display: flex;
     justify-content: space-around;
+    
 }
 
 .projects{
     background:var(--ice-blue);
     grid-column: 1;
+    
 }
 
 .each_project{
@@ -72,7 +76,7 @@ body {
 }
 
 input{
-    width:400px ;
+    width :70% ;
     background: var(--ice-blue);
     border: none;
     border-radius: 20px;
@@ -103,10 +107,12 @@ button{
 .project_box{
     background-color: var(--white_color);
     border: 2px solid white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 0.8rem;
+    border-left: rgb(204, 204, 69) solid 6px;
 }
 
 .site_maintainance,.CSD,.upp,#ann{
@@ -121,11 +127,13 @@ button{
     border-radius: 12px;
     display: block;
     margin-bottom: 20px;
-    width: 300px;
+    width: 90%;
+    font-size: 0.8rem;
 }
 
 .announcements_and_trending{
     background-color: var(--ice-blue);
+    
   
     grid-column: 2;
 }
@@ -168,6 +176,7 @@ button{
     background-position:center;
     background-size: cover;
     border-radius: 50%;
+    
 }
 
 .main-page{
@@ -206,6 +215,8 @@ button{
     background-size: cover;
     border-radius: 50%;
    margin-left: 20px;
+   margin-right: 20px;
+   
    
    
 
@@ -273,6 +284,7 @@ width: 35px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width:90%;
 }
 .trending_Child{
     display: flex;
